@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: online-store-microservice-gateway
+  profiles:
+    active: dev
+  config:
+    import: configserver:${CLOUD_CONFIG_URI:http://localhost:8083/}
